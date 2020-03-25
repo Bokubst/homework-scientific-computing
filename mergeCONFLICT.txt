@@ -1,1 +1,8 @@
 this is the file to change...
+ok, I'll do it myself - 
+step1: load file to server
+step2: make changes to file
+step3: delete file on server
+step4: push changed file to server
+step5: see what happens ...
+step6: read 'addressing merge confict' article on Github
