@@ -5,4 +5,17 @@ step2: make changes to file
 step3: delete file on server
 step4: push changed file to server
 step5: see what happens ...
+
+$ git push
+To https://github.com/Bokubst/homework-scientific-computing
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Bokubst/homework-scientific-computing'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+step5a: fetch first
+
 step6: read 'addressing merge confict' article on Github
