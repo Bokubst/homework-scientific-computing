@@ -48,3 +48,47 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 step6: read 'addressing merge confict' article on Github
 
+step7: 
+
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+        deleted by them: mergeCONFLICT.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+$ git add mergeCONFLICT.txt
+
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   mergeCONFLICT.txt
+
+$ git commit -m 'Change mergeCONFLICT.txt'
+[master 0202256] Change mergeCONFLICT.txt
+
+$ git push
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.60 KiB | 819.00 KiB/s, done.
+Total 9 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+To https://github.com/Bokubst/homework-scientific-computing
+   303fbe5..0202256  master -> master
+
