@@ -18,4 +18,33 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 step5a: fetch first
 
+$ git fetch https://github.com/Bokubst/homework-scientific-computing
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 604 bytes | 120.00 KiB/s, done.
+From https://github.com/Bokubst/homework-scientific-computing
+ * branch            HEAD       -> FETCH_HEAD
+
+step5b: not exactly what I wanted
+
+$ git push
+To https://github.com/Bokubst/homework-scientific-computing
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Bokubst/homework-scientific-computing'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+step5c: use pull instead
+
+$ git pull https://github.com/Bokubst/homework-scientific-computing
+From https://github.com/Bokubst/homework-scientific-computing
+ * branch            HEAD       -> FETCH_HEAD
+CONFLICT (modify/delete): mergeCONFLICT.txt deleted in 303fbe57b664aa0f4c8b7fded9993be5bfb7894a and modified in HEAD. Version HEAD of mergeCONFLICT.txt left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+
 step6: read 'addressing merge confict' article on Github
+
