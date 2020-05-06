@@ -3,6 +3,7 @@ import numpy as np
 random1 = np.random.uniform(size=100)
 print("random1 values")
 print(random1)
+
 random2 = np.random.uniform(size=100)
 print("random2 values")
 print(random2)
@@ -17,7 +18,7 @@ plt.show()
 
 plt.plot(random2, label = "random number 2")
 plt.title("random number 2")
-ran_mean2 = [np.mean(random1) for i in random2]
+ran_mean2 = [np.mean(random2) for i in random2]
 plt.plot(ran_mean2, label = 'mean value')
 plt.show()
 
