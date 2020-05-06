@@ -2,11 +2,11 @@ import numpy as np
 
 random1 = np.random.uniform(size=100)
 print("random1 values")
-print(random1)
+print(random1 , "\n")
 
 random2 = np.random.uniform(size=100)
 print("random2 values")
-print(random2)
+print(random2 , "\n")
 
 from matplotlib import pyplot as plt
 
@@ -35,11 +35,12 @@ plt.show()
 
 random1means = np.mean(random1)
 print("mean of random1")
-print(random1means)
+print(random1means  , "\n")
 
 random2means = np.mean(random2)
 print("mean of random2")
-print(random2means)
+print(random2means  , "\n")
+
 random3means = np.mean(random3)
 print("mean of random3")
 print(random3means)
